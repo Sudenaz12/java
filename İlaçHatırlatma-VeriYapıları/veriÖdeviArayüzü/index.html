@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlaç Takip Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>💊 İlaç Takip Sistemi</h1>
+
+    <div class="box">
+        <label>İlaç Adı:</label>
+        <input id="drugName" type="text" placeholder="Örn: Ağrı Kesici">
+
+        <label>Başlangıç Tarihi:</label>
+        <input id="drugStart" type="date">
+
+        <label>Elinizdeki Stok (Adet):</label>
+        <input id="drugStock" type="number" min="1" value="10">
+
+        <h3>Doz Saatlerini Ekle</h3>
+        <p style="font-size: 0.9em; color: #666;">Aşağıdan günde kaç kere içeceğinizi seçin:</p>
+        
+        <div id="doses"></div>
+
+        <button id="addDoseBtn" type="button">+ Yeni Saat Ekle</button>
+        <button id="saveBtn" class="primary" type="button">İlacı Kaydet</button>
+    </div>
+
+    <h2>Kayıtlı İlaçlar</h2>
+    <div id="drugList"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
